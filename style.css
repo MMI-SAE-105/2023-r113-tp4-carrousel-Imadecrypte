@@ -6,7 +6,7 @@
 
 * {
 /* change le box model */
-box-sizing :  border-box ;
+    box-sizing : border-box ;
 }
   
 img {
@@ -30,4 +30,8 @@ img {
 .carrousel_ecran figure {
   /* enlève les marges par défaut */   
     padding: 100px;
-} 
+}
+.caroussel_liste-liens{
+    display: flex;
+    gap: 3rem;
+}
