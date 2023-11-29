@@ -6,12 +6,11 @@
     <title>TP4 Carrousel</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <link href="/style.css" rel="stylesheet">
-    <script src="/javascript.js"></script>
 </head>
 <body>
     <div class="carrousel" x-data="{}">
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-        <div class="carrousel_parent-ecrans">
+        <div class="carrousel_parent-ecrans" xref="parent">
             <div id="ecran-1" class="carrousel_ecran">
                 <figure>
                     <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
