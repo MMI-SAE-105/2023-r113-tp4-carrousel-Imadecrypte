@@ -1,10 +1,4 @@
-/* en vrac :
-  100% 0 auto
- height  flex none margin 
- width width
-*/ 
-
-* {
+*{
 /* change le box model */
     box-sizing : border-box ;
 }
@@ -15,6 +9,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .carrousel_parent-ecrans {
   /* aligne horizontalement les enfants */
   /* largeur du parent */
@@ -25,20 +20,28 @@ img {
     scroll-behavior: smooth; /* animation de défilement */
     scroll-snap-type: x mandatory; /* permet de scroller par blocs */
 }
+
 .carrousel_ecran {
   /* largeur du parent pour chaque enfant */
   /* permet de garder toute la largeur du parent */
     flex:none;
     scroll-snap-align: start; /* aligne les enfants par blocs */
 }
+
 .carrousel_ecran figure {
   /* enlève les marges par défaut */   
     padding: 150px;
 }
+
 .caroussel_liste-liens{
-    display: flex;
-    gap: 3rem;
+    display: flex; /* aligne horizontalement les enfants */
+    justify-content: center; /*centre horizontalement les enfants */
+    gap: 1rem;
+    list-style: none; /* enlève les padding par défaut */
+    margin: 0; /* enlève les puces par défaut */
+    padding: 0; /* espace entre les enfants */
 }
+
 .carrousel {
   position: relative;
 }
